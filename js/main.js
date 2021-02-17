@@ -24,6 +24,10 @@ window.onload = () => {
         textInputs.forEach(inp => {
             store[`${inp.name}`] = inp.value;
         });
+        let numberInputs = document.querySelectorAll('input[type="number"]');
+        numberInputs.forEach(inp => {
+            store[`${inp.name}`] = parseInt(inp.value);
+        });
         let textAreas = document.querySelectorAll('textarea');
         textAreas.forEach(textarea => {
             store[`${textarea.name}`] = textarea.value;
