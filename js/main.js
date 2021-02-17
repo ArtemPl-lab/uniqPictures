@@ -36,6 +36,8 @@ window.onload = () => {
         radios.forEach(radio=>{
             store[`${radio.name}`] = radio.value;
         });
+        let color = document.querySelector('#colors input[type="radio"]:checked');
+        store[`${color.name}`] = JSON.parse(color.value);
         formData.set('params', JSON.stringify(store));
         
         let watermarkInp = document.getElementById('water-mark-file');
