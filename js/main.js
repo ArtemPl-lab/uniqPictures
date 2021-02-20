@@ -43,6 +43,7 @@ window.onload = () => {
         let watermarkInp = document.getElementById('water-mark-file');
         formData.set('img_watermark', watermarkInp.files[0]);
         // formdata.append("params", "{\"reflect\":false,\"blur\":false,\"adaptive_blur\":false,\"sharpen\":false,\"add-rand-noise\":false,\"border\":true,\"emboss\":false,\"despeckle\":false,\"denoise\":false,\"spread\":false,\"swirl\":false,\"water-mark\":false,\"blur_radius\":null,\"blur_otkl\":null,\"adaptive_blur_radius\":null,\"adaptive_blur_stddev\":null,\"\":null,\"border_width\":10,\"border_height\":10,\"spread_radius\":null,\"swirl_radius\":null,\"watermark_x\":null,\"watermark_y\":null,\"quality\":\"on\",\"border_color\":[178,132,190]}");
+        alert("В ближайшее время начнётся загрузка");
         sendData(formData);
     }
 
@@ -64,6 +65,9 @@ window.onload = () => {
                 a.click();    
                 a.remove();  //afterwards we remove the element again  
                 clearInterval(interval);       
+            }
+            else if(archive.status !== 404){
+                alert("Fatal error");
             }
 
         };
