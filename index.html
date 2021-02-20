@@ -100,31 +100,25 @@
                         </div>
                     </div>
                     <div class="form-row-min">
-                        <input type="checkbox" name="add-rand-noise" id="add-rand-noise">
-                        <label for="add-rand-noise" class="checkbox-label">Наложить случайный шум на изображение</label>
+                        <input type="checkbox" name="random_noise" id="random_noise">
+                        <label for="random_noise" class="checkbox-label">Наложить случайный шум на изображение</label>
                         <div class="form-col-sm">
                             <div class="inp-desc">Тип шума:</div>
                             <div class="custom-dropdown">
-                                <div class="custom-dropdown__btn" tabindex="0" outfor="type-noise">
+                                <div class="custom-dropdown__btn" tabindex="0" outfor="random_noise_type">
                                     Выберите тип:
                                 </div>
                                 <div class="custom-dropdown__drop-block">
-                                    <input type="radio" name="type-noise" id="el1" class="custom-dropdown__checkbox" value="NOISE_UNIFORM">
+                                    <input type="radio" name="random_noise_type" id="el1" class="custom-dropdown__checkbox" value="uniform">
                                     <label for="el1" class="custom-dropdown__checkbox-label">NOISE_UNIFORM</label>
 
-                                    <input type="radio" name="type-noise" id="el2" class="custom-dropdown__checkbox" value="NOISE_GAUSSIAN">
+                                    <input type="radio" name="random_noise_type" id="el2" class="custom-dropdown__checkbox" value="gauss">
                                     <label for="el2" class="custom-dropdown__checkbox-label">NOISE_GAUSSIAN</label>
-                                    
-                                    <input type="radio" name="type-noise" id="el3" class="custom-dropdown__checkbox" value="NOISE_MULTIPLICATIVEGAUSSIAN">
-                                    <label for="el3" class="custom-dropdown__checkbox-label">NOISE_MULTIPLICATIVEGAUSSIAN</label>
 
-                                    <input type="radio" name="type-noise" id="el4" class="custom-dropdown__checkbox" value="NOISE_IMPULSE">
-                                    <label for="el4" class="custom-dropdown__checkbox-label">NOISE_IMPULSE</label>
-
-                                    <input type="radio" name="type-noise" id="el5" class="custom-dropdown__checkbox" value="NOISE_LAPLACIAN">
+                                    <input type="radio" name="random_noise_type" id="el5" class="custom-dropdown__checkbox" value="laplace">
                                     <label for="el5" class="custom-dropdown__checkbox-label">NOISE_LAPLACIAN</label>
 
-                                    <input type="radio" name="type-noise" id="el6" class="custom-dropdown__checkbox" value="NOISE_POISSON">
+                                    <input type="radio" name="random_noise_type" id="el6" class="custom-dropdown__checkbox" value="poisson">
                                     <label for="el6" class="custom-dropdown__checkbox-label">NOISE_POISSON</label>
                                 </div>
                             </div>
