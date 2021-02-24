@@ -68,11 +68,11 @@
                         <label for="blur" class="checkbox-label">Добавить фильтр размытия к изображению</label>
                         <div class="form-col">
                             <div class="inp-desc">Радиус размытия:</div>
-                            <input type="number" name="blur_radius">
+                            <input type="number" min="0" name="blur_radius">
                         </div>
                         <div class="form-col">
                             <div class="inp-desc">Стандартное отклонение:</div>
-                            <input type="number" name="blur_otkl">
+                            <input type="number" min="0" name="blur_otkl">
                         </div>
                     </div>
                     <div class="form-row-min">
@@ -80,11 +80,11 @@
                         <label for="adaptive_blur" class="checkbox-label">Добавить адаптивный фильтр размытия к изображению</label>
                         <div class="form-col">
                             <div class="inp-desc">Радиус Гаусса:</div>
-                            <input type="number" name="adaptive_blur_radius">
+                            <input type="number" min="0" name="adaptive_blur_radius">
                         </div>
                         <div class="form-col">
                             <div class="inp-desc">Стандартное отклонение:</div>
-                            <input type="number" name="adaptive_blur_stddev">
+                            <input type="number" min="0" name="adaptive_blur_stddev">
                         </div>
                     </div>
                     <div class="form-row-min">
@@ -92,11 +92,11 @@
                         <label for="sharpen" class="checkbox-label">Улучшить резкость изображения</label>
                         <div class="form-col">
                             <div class="inp-desc">Радиус Гаусса:</div>
-                            <input type="number" name="sharpen_radius">
+                            <input type="number" min="0" name="sharpen_radius">
                         </div>
                         <div class="form-col">
                             <div class="inp-desc">Стандартное отклонение:</div>
-                            <input type="number" name="sharpen_stddev">
+                            <input type="number" min="0" name="sharpen_stddev">
                         </div>
                     </div>
                     <div class="form-row-min">
@@ -140,11 +140,11 @@
                         </div>
                         <div class="form-col ml-sm-0 mt-sm">
                             <div class="inp-desc">Ширина рамки пикселей:</div>
-                            <input type="number" name="border_width">
+                            <input type="number" min="0" name="border_width">
                         </div>
                         <div class="form-col mt-sm">
                             <div class="inp-desc">Высота рамки пикселей:</div>
-                            <input type="number" name="border_height">
+                            <input type="number" min="0" name="border_height">
                         </div>
                     </div>
                     <div class="form-row">
@@ -152,11 +152,11 @@
                         <label for="emboss" class="checkbox-label">Изображение в градациях серого с трехмерным эффектом</label>
                         <div class="form-col">
                             <div class="inp-desc">Радиус эффекта:</div>
-                            <input type="number">
+                            <input type="number" min="0">
                         </div>
                         <div class="form-col">
                             <div class="inp-desc">Сигма эффекта:</div>
-                            <input type="number">
+                            <input type="number" min="0">
                         </div>
                     </div>
                     <div class="form-row">
@@ -174,7 +174,7 @@
                         <label for="spread" class="checkbox-label">Случайно сместить каждый пиксель в блоке (размытие)</label>
                         <div class="form-col-sm">
                             <div class="inp-desc">Радиус эффекта:</div>
-                            <input type="number" name="spread_radius">
+                            <input type="number" min="0" name="spread_radius">
                         </div>
                         <div class="form-col"></div>
                     </div>
@@ -183,7 +183,7 @@
                         <label for="swirl" class="checkbox-label">Закрутить пиксели вокруг центра изображения</label>
                         <div class="form-col-sm">
                             <div class="inp-desc">Градусы размаха дуги:</div>
-                            <input type="number" name="swirl_radius">
+                            <input type="number" min="0" name="swirl_radius">
                         </div>
                         <div class="form-col-sm"></div>
                     </div>
@@ -197,11 +197,11 @@
                         </div>
                         <div class="form-col ml-sm-0 mt-sm">
                             <div class="inp-desc">Расположение по оси X:</div>
-                            <input type="number" name="watermark_x">
+                            <input type="number" min="0" name="watermark_x">
                         </div>
                         <div class="form-col mt-sm">
                             <div class="inp-desc">Расположение по оси Y:</div>
-                            <input type="number" name="watermark_y">
+                            <input type="number" min="0" name="watermark_y">
                         </div>
                     </div>
                     <button type="submit" class="form-submit">Уникализировать</button>
